@@ -1,17 +1,8 @@
-// import { render } from '@wordpress/element'
-
-// const App = () => <h1>Hello, WordPress + React + JSX!</h1>
-
-// const root = document.getElementById('app')
-// if (root) {
-//   render(<App />, root)
-// }
-
 import { render } from '@wordpress/element'
 
 const App = () => {
   console.log('Rendering React component...')
-  return <h1>Hello, WordPress + React + JSX!22223333</h1>
+  return <h1>Hello, WordPress + React + JSX!</h1>
 }
 
 const root = document.getElementById('app')
