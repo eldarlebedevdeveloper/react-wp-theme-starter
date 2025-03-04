@@ -1,3 +1,34 @@
+UA React WordPress Starter theme for developers
+
+React компоненти у різних папках є взаємозаміними для php файлів у папках з такимиж назвами у корі вордпресс теми
+за виключенням певних папко у src , таких як component(або як я її назву) яка є папкою тільки для компоненів які 
+вбудовуються у реакт файли 
+
+
+Template Post Type: post - цей коментар у single-name.php вказує до якого типу постів призначити шаблон
+
+------------Можлива структура проекти-------
+pages - 
+tempates
+----attachment
+----author
+----cetegory
+----page
+----single
+----tag
+----taxonomy
+templatesCPT
+----archive
+----single
+----taxonomy
+src
+----init - файли для ініціалізації компоненрів різних типів
+----components(elements, partsReact) - Для компонентів(елементів) які вбудовцються у реакт файли шаблонів, сторінок, тощо
+----parts - Для компонентів(елементів) які вбудовцються у worpdress php файли шаблонів, сторінок, тощо
+----pages - Для сторінок які повність створенні на реакті за виключеням header, footer, sidebar але можна і з ними 
+----templates - для стандартних primary templates і secondary templates ієраррархії вордпрес
+----templatesCustom -- для усіх інших шаблонів : variable templates, кастомні типи постів, кастомні типи архіві, кастомні таксономії архіви
+
 ------------ Мінімальні налаштування для запуску - ПОЧАТОК --------------
 
 1. Потрібно встановити @wordpress/scripts та @wordpress/element для того щоб почати створення wp теми з react 
@@ -51,3 +82,14 @@ add_action('wp_enqueue_scripts', 'my_react_theme_enqueue_scripts');
 7. Файл index.js має розміщуватися за наступним маршрутом src/index.js це необхідно для того щоб package.json його бачив(спрощенно кажучи)
 
 ------------ Мінімальні налаштування для запуску - КІНЕЦЬ --------------
+
+
+------------ Доповнюючі ресурси - ПОЧАТОК --------------
+1. Привильний запит у Chat GPT
+Як створити тему WordPress за допомогою @wordpress/scripts та @wordpress/element, з інтеграцією JSX через Babel і @wordpress/babel-preset-default на прикладі:
+babel.config.js
+module.exports = {
+  presets: ['@wordpress/babel-preset-default', '@babel/preset-react'],
+};
+
+2. https://kinsta.com/blog/wordpress-react-theme/

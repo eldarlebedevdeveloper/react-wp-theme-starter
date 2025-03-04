@@ -1,6 +1,115 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/init/init.js":
+/*!**************************!*\
+  !*** ./src/init/init.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _initTemplates__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initTemplates */ "./src/init/initTemplates.js");
+/* harmony import */ var _initPages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initPages */ "./src/init/initPages.js");
+/* harmony import */ var _initComponents__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./initComponents */ "./src/init/initComponents.js");
+/* harmony import */ var _initComponents__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_initComponents__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+/***/ }),
+
+/***/ "./src/init/initComponents.js":
+/*!************************************!*\
+  !*** ./src/init/initComponents.js ***!
+  \************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/init/initPages.js":
+/*!*******************************!*\
+  !*** ./src/init/initPages.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Home */ "./src/pages/Home.js");
+
+
+
+// Templates initialization
+const root = document.getElementById('app-home');
+root && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/React.createElement(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null), root);
+
+/***/ }),
+
+/***/ "./src/init/initTemplates.js":
+/*!***********************************!*\
+  !*** ./src/init/initTemplates.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _templates_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../templates/About */ "./src/templates/About.js");
+
+
+
+// Pages initialization
+const rootAbout = document.getElementById('app-about');
+rootAbout && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/React.createElement(_templates_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), rootAbout);
+
+/***/ }),
+
+/***/ "./src/pages/Home.js":
+/*!***************************!*\
+  !*** ./src/pages/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+const Home = () => {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Home Page test"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
+/***/ "./src/templates/About.js":
+/*!********************************!*\
+  !*** ./src/templates/About.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+const About = () => {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "About page template"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
 
 /***/ "@wordpress/element":
 /*!*********************************!*\
@@ -8,6 +117,7 @@
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ })
@@ -81,35 +191,15 @@ module.exports = window["wp"]["element"];
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-// import { render } from '@wordpress/element'
+/* harmony import */ var _init_init_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init/init.js */ "./src/init/init.js");
 
-// const App = () => <h1>Hello, WordPress + React + JSX!</h1>
-
-// const root = document.getElementById('app')
-// if (root) {
-//   render(<App />, root)
-// }
-
-
-const App = () => {
-  console.log('Rendering React component...');
-  return /*#__PURE__*/React.createElement("h1", null, "Hello, WordPress + React + JSX!22223333");
-};
-const root = document.getElementById('app');
-if (root) {
-  console.log('React root found!');
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)(/*#__PURE__*/React.createElement(App, null), root);
-} else {
-  console.error('No #app element found!');
-}
 })();
 
 /******/ })()
