@@ -1,6 +1,11 @@
 /*
-Theme Name: Resct Wordpress Theme Starter
-Author: Your Name
-Description: A WordPress theme using React.
+Theme Name: UA React WordPress Starter theme for developers with documentation(tutorial)
+Author: Eldar Developer
+Description: Slava Ukrayini. This is UA React WordPress Starter theme for developers with documentation(tutorial)
 Version: 1.0
 */
+
+body{
+    background-color: #464646;
+    color: #e6e6e6;
+} 
