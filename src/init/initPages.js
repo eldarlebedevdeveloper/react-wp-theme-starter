@@ -1,6 +1,4 @@
 import { render } from '@wordpress/element'
-import Home from '../templates/Home'
+import About from '../pages/About'
 
-// Templates initialization
-const root = document.getElementById('app-home')
-root && render(<Home />, root)
+
